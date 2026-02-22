@@ -219,3 +219,29 @@ footer p {
         justify-content: center;
     }
 }
+.hero {
+    background: #EADDFF;
+    padding: 40px;
+    border-radius: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #21005D;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #49454F;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #1D1B20;
+    margin-bottom: 20px;
+}
