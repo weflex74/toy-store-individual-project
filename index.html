@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин Игрушек</title>
+    <title>Главная - Магазин Игрушек</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Магазин Игрушек</h1>
+        <nav class="navbar">
+            <a href="index.html" class="active">Главная</a>
+            <a href="catalog.html">Все игрушки</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
     </header>
     <div class="container">
-        <div id="products-list" class="products"></div>
-        <div class="cart">
-            <h2>Корзина</h2>
-            <ul id="cart-items"></ul>
-            <div class="cart-total">
-                Итого: <span id="total-price">0</span> руб.
-            </div>
-            <button id="checkout-btn">Оформить заказ</button>
-        </div>
+        <h2>Популярные товары</h2>
+        <div id="popular-products" class="products"></div>
     </div>
     <footer>
+        <p>НЕКОМЕРЧЕСКОЕ, сделано для Markoha по специальному заказу</p>
         <p>НЕКОМЕРЧЕСКОЕ, сделано для Weflex74 по специальному заказу</p>
     </footer>
     <script src="products.js"></script>

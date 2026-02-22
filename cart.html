@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Магазин Игрушек</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ваша Корзина</h1>
+        <nav class="navbar">
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Все игрушки</a>
+            <a href="cart.html" class="active">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cart-page-content">
+            <ul id="cart-items"></ul>
+            <div class="cart-total">
+                Итого: <span id="total-price">0</span> руб.
+            </div>
+            <button id="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+    <footer>
+        <p>НЕКОМЕРЧЕСКОЕ, сделано для Weflex74 по специальному заказу</p>
+    </footer>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
