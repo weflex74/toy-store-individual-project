@@ -4,6 +4,6 @@ const products = [
     { id: 3, name: "Радиоуправляемая машинка", price: 2100, popular: false },
     { id: 4, name: "Кукла", price: 1500, popular: true },
     { id: 5, name: "Настольная игра", price: 900, popular: false },
-    { id: 6, name: "Лего кружка", price: 1000, popular: false }
+    { id: 6, name: "Лего кружка", price: 1000, popular: false },
     { id: 7, name: "Подарочная карта", price: 5000, popular: false}
 ];
