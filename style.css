@@ -14,34 +14,68 @@ body {
 header {
     background-color: #EADDFF;
     color: #21005D;
-    text-align: center;
-    padding: 2.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
     border-bottom-left-radius: 32px;
     border-bottom-right-radius: 32px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #21005D;
+    font-weight: 500;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background: #F3EDF7;
+    transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+    background: #D0BCFF;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background: #6750A4;
+    color: #FFFFFF;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 40px;
-    gap: 24px;
-    align-items: flex-start;
+    width: 100%;
+    box-sizing: border-box;
     flex: 1;
 }
 
+h2 {
+    margin-top: 0;
+    color: #1D1B20;
+}
+
 .products {
-    flex: 3;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 24px;
+    width: 100%;
 }
 
 .product-card {
@@ -89,30 +123,20 @@ header h1 {
     filter: brightness(0.95);
 }
 
-.cart {
-    flex: 1;
-    min-width: 320px;
+.cart-page-content {
     background: #F3EDF7;
     padding: 24px;
     border-radius: 28px;
-    position: sticky;
-    top: 24px;
-}
-
-.cart h2 {
-    margin-top: 0;
-    color: #1D1B20;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #cart-items {
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
 }
 
 #cart-items li {
@@ -165,9 +189,6 @@ header h1 {
     padding: 8px;
     border-radius: 100px;
     transition: background-color 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .remove-btn:hover {
@@ -188,11 +209,13 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .container {
+    header {
         flex-direction: column;
+        gap: 20px;
+        padding: 1.5rem 1rem;
     }
-    .cart {
-        width: auto;
-        position: static;
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
